@@ -53,11 +53,13 @@ class LoginScreen extends StatelessWidget {
                               children: [
                                 AppTextFormField(
                                   initialValue: provider.email,
+                                  labelText: 'Email',
                                   onChanged: (v) => provider.setEmail(v),
                                 ),
                                 const SizedBox(height: 20),
                                 AppTextFormField(
                                   initialValue: provider.password,
+                                  labelText: 'Password',
                                   onChanged: (v) => provider.setPassword(v),
                                   obscureText: true,
                                 ),
@@ -74,7 +76,7 @@ class LoginScreen extends StatelessWidget {
                                 ),
                               ),
                               const SizedBox(
-                                width: 10,
+                                width: 5,
                               ),
                               InkWell(
                                 onTap: (){
