@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "558868134734",
+    "project_id": "chatmate-u",
+    "storage_bucket": "chatmate-u.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:558868134734:android:a7fcaaa3854200714bbc1f",
+        "android_client_info": {
+          "package_name": "code.jeuel.chatmate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "558868134734-kug0ahq3m6gag4057so80mtdopibi2t7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtZTtMdJ2D8b2LALOAy7pWOsKObdKHWww"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "558868134734-kug0ahq3m6gag4057so80mtdopibi2t7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
