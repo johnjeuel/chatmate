@@ -42,7 +42,7 @@ class LoginProvider with ChangeNotifier {
           email: _email,
           password: _password
       );
-      print('user ${userCredential} ${userCredential.user?.email} ${userCredential.user?.uid}');
+      print('user ${userCredential}');
       Get.offAllNamed('/dashboard');
 
       EasyLoading.showSuccess( 'Welcome ${userCredential.user?.displayName}');

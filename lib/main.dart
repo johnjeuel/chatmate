@@ -32,7 +32,7 @@ class ChatmateApp extends StatelessWidget {
         builder: (BuildContext context, AsyncSnapshot<IdTokenResult> snapshot) {
           if (snapshot.connectionState == ConnectionState.done && snapshot.hasData) {
             var d = snapshot.data;
-            // print('snapshot ${snapshot.data?.claims ${}');
+            print('snapshot ${snapshot.data?.claims}');
             if (d?.claims!['roles'] == 'superadmin' || d?.claims!['roles'] == 'admin') {
               return Container();
             } else if (d?.claims!['roles'] == 'user') {
@@ -54,6 +54,7 @@ class ChatmateApp extends StatelessWidget {
     return ScreenUtilInit(
       builder: (_) {
         return GetMaterialApp(
+          debugShowCheckedModeBanner: false,
           builder: EasyLoading.init(),
           getPages: _getRouter.getRoutes,
           home: SafeArea(
@@ -62,6 +63,7 @@ class ChatmateApp extends StatelessWidget {
               builder: (BuildContext context, AsyncSnapshot<User?> snapshot) {
                 if (snapshot.connectionState == ConnectionState.active && snapshot.hasData) {
                   var data = snapshot.data;
+                  print("data $data");
                   return GetRole(data!);
                 } else if (snapshot.connectionState == ConnectionState.waiting) {
                   return const Center(
