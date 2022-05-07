@@ -2,13 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:chatmate/utils/common/app_strings.dart';
 import 'package:chatmate/utils/common/constant.dart';
 
-PreferredSizeWidget CustomAppBar() {
+PreferredSizeWidget CustomAppBar({String title = 'Chatmate'}) {
     return  AppBar(
       title: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           const SizedBox(width: 10,),
-          const Text('Chatmate'),
+          Text(title),
           const SizedBox(width: 10,),
         ],
       ),

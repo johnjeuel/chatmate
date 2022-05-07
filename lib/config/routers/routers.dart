@@ -1,3 +1,4 @@
+import 'package:chatmate/modules/chat/chat.dart';
 import 'package:chatmate/modules/dashboard/dashboard.dart';
 import 'package:get/get_navigation/src/routes/get_route.dart';
 
@@ -10,5 +11,6 @@ class GetRouter{
     GetPage(name: '/login', page: () => LoginScreen()),
     GetPage(name: '/dashboard', page: () => DashboardScreen()),
     GetPage(name: '/signup', page: () =>  SignupScreen()),
+    GetPage(name: '/chat', page: () =>  ChatScreen()),
   ];
 }
